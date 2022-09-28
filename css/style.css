@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: burlywood;
+}
+
+#logo{
+    height: 100px;
+}
+
+header{
+    display: grid;
+    background-color: yellow;
+    grid-template-columns: 1fr 1fr;
+}
+
+header > nav{
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+    border: 3px green solid;
+}
+
+
