@@ -11,6 +11,10 @@ html{
     height: 100px;
 }
 
+h1{
+    display: none;
+}
+
 header{
     display: grid;
     background-color: yellow;
@@ -24,4 +28,64 @@ header > nav{
     border: 3px green solid;
 }
 
+#deer1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    column-gap: 5vw;
+    row-gap: 10vh;
+}
 
+#deer1  img{
+    max-width: 100%;
+    
+}
+
+.deer2{
+    display: grid;
+    grid-auto-rows: min-content;
+}
+
+.deer3{
+    display: grid;
+    color: blue;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#deer4 > a{
+    display: grid;
+    margin-top: 5vh;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 600px){
+    h1{
+        color: red;
+        display: grid;
+        justify-self: start;
+        align-self: center;
+    }
+    header{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    header > nav{
+        justify-self: end;
+    }
+    #deer1{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    h1{
+        font-size: 5rem;
+        justify-self: center;
+
+    }
+    #deer1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+    
